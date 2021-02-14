@@ -109,7 +109,7 @@
           color: #48494d;
           opacity: 1;
 
-          &:after {
+          &::after {
             position: absolute;
             content: "";
             width: 16px;

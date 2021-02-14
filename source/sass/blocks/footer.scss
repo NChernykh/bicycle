@@ -1,6 +1,88 @@
-.footer {
+.footer__container {
   min-height: 100px;
-  padding: 0 60px;
+  margin: 0 auto;
+  padding: 33px 100px 80px;
 
-  background-color: $maincolor;
+  @include viewport--md {
+    padding-top: 15px;
+    padding-bottom: 54px;
+  }
+
+  @include viewport--sm {
+    padding: 24px 22px 50px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+
+  @include viewport--sm {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  a {
+    position: relative;
+    margin-right: 105px;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+
+    @include viewport--md {
+      margin-right: 98px;
+      padding-left: 30px;
+    }
+
+    @include viewport--sm {
+      margin: 0;
+      margin-bottom: 24px;
+      padding-left: 47px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-default-black;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer__item--phone {
+    @include viewport--sm {
+      padding-left: 25px;
+    }
+  }
+}
+
+.footer__icon {
+  position: absolute;
+  top: 0;
+  left: -19px;
+  stroke: #d7d9df;
+  fill: none;
+
+  @include viewport--md {
+    left: -10px;
+  }
+
+  @include viewport--sm {
+    left: 8px;
+  }
+
+  &--phone {
+    left: -13px;
+
+    @include viewport--md {
+      left: -6px;
+    }
+
+    @include viewport--sm {
+      left: 37px;
+    }
+  }
 }

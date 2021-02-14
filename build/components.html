@@ -123,9 +123,6 @@
 
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -157,23 +154,73 @@
         <h1>Компоненты, используемые в вёрстке</h1>
 
         <section>
+          <h2>Форма заказа</h2>
+
+          <p>class="form"</p>
+
+          <form class="form"action="https://echo.htmlacademy.ru" method="post">
+  <h3 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+  <div class="form__item">
+    <label class="form__label" aria-label="Введите Имя">
+      <input class="form__input" type="text" name="user_name" placeholder="Введите Ваше Имя" required>
+    </label>
+  </div>
+  <div class="form__item">
+    <label class="form__label" aria-label="Введите номер телефона">
+      <input class="form__input" type="tel" name="user_tel" placeholder="Введите Ваш номер телефона" required>
+    </label>
+  </div>
+  <button class="form__button js-button" type="submit">Подобрать велосипед мечты</button>
+</form>
+
+
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <!-- <form class="form"action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+            <div class="form__item">
+              <label class="form__label" aria-label="Введите Имя">
+                <input class="form__input" type="text" name="user_name" placeholder="Введите Ваше Имя" required>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label" aria-label="Введите номер телефона">
+                <input class="form__input" type="tel" name="user_tel" placeholder="Введите Ваш номер телефона" required>
+              </label>
+            </div>
+            <button class="form__button js-button" type="submit">Подобрать велосипед мечты</button>
+          </form> -->
+
+        <section>
           <h2>Название компонента или группы компонентов</h2>
 
           <p>Класс компонента \ модификаторы</p>
           <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
           <div>Компонент</div>
         </section>
-
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <!-- <section>
-          <h2></h2>
-
-          <p></p>
-        </section> -->
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <a class="footer__item" href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать письмо">
+        <svg class="footer__icon  footer__icon--mail" width="26" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+        </svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="footer__item footer__item--phone" href="tel:+749978468446" aria-label="Позонить">
+        <svg class="footer__icon footer__icon--phone" width="21" height="22">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        +7 (499) -784-684-46
+      </a>
+    </div>
+  </div>
+</footer>
 
   </div>
 

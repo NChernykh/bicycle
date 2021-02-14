@@ -1,0 +1,11 @@
+.about {
+  height: 2347px;
+
+  @include viewport--md {
+    height: 1934px;
+  }
+
+  @include viewport--sm {
+    height: 2560px;
+  }
+}

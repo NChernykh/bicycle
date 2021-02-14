@@ -13,7 +13,7 @@
     background-size: 2160px auto;
   }
 
-  @include viewport--md  {
+  @include viewport--md {
     background-image: url("../../img/bg/intro-bg-tablet@1x.jpg");
 
     @include retina {
@@ -22,7 +22,7 @@
     }
   }
 
-  @include viewport--sm  {
+  @include viewport--sm {
     background-image: url("../../img/bg/intro-bg-mobile@1x.jpg");
 
     @include retina {

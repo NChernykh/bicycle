@@ -83,9 +83,6 @@
 
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -124,30 +121,53 @@
         <div class="container">
           <h2 class="visually-hidden">Форма заказа</h2>
           <form class="form"action="https://echo.htmlacademy.ru" method="post">
-            <h3 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
-            <div class="form__item">
-              <label class="form__label" aria-label="Введите Имя">
-                <input class="form__input" type="text" name="user_name" placeholder="Введите Ваше Имя" required>
-              </label>
-            </div>
-            <div class="form__item">
-              <label class="form__label" aria-label="Введите номер телефона">
-                <input class="form__input" type="tel" name="user_tel" placeholder="Введите Ваш номер телефона" required>
-              </label>
-            </div>
-            <button class="form__button js-button" type="submit">Подобрать велосипед мечты</button>
-          </form>
+  <h3 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+  <div class="form__item">
+    <label class="form__label" aria-label="Введите Имя">
+      <input class="form__input" type="text" name="user_name" placeholder="Введите Ваше Имя" required>
+    </label>
+  </div>
+  <div class="form__item">
+    <label class="form__label" aria-label="Введите номер телефона">
+      <input class="form__input" type="tel" name="user_tel" placeholder="Введите Ваш номер телефона" required>
+    </label>
+  </div>
+  <button class="form__button js-button" type="submit">Подобрать велосипед мечты</button>
+</form>
+
         </div>
       </section>
       <section class="about">
         <h2 class="about__title">Несколько фактов о нас</h2>
       </section>
-
-      <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-      <p><a href="#" data-modal="success">modal--success link</a></p>
+      <section class="map">
+        <div class="map__container">
+          <h2 class="map__title">Как нас найти?</h2>
+          <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <iframe class="map__img"  height="530" style="border:0;" allowfullscreen title="ул. Большая Конюшенная, 19/8, офис 101, Санкт-Петербург" tabindex="0"></iframe>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <a class="footer__item" href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать письмо">
+        <svg class="footer__icon  footer__icon--mail" width="26" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+        </svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="footer__item footer__item--phone" href="tel:+749978468446" aria-label="Позонить">
+        <svg class="footer__icon footer__icon--phone" width="21" height="22">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        +7 (499) -784-684-46
+      </a>
+    </div>
+  </div>
+</footer>
 
 
     <div class="modal modal--preload modal--feedback    ">
