@@ -1,0 +1,58 @@
+.catalog {
+  margin-bottom: 150px;
+  background-color: #f6f7f9;
+  padding-top: 150px;
+  text-align: center;
+
+  @include viewport--md {
+    padding-top: 50px;
+  }
+}
+
+.catalog__container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1226px;
+
+  @include viewport--md {
+    padding: 0;
+    max-width: 590px;
+  }
+
+  @include viewport--sm {
+    padding: 0 25px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: #1f1f1f;
+
+    @include viewport--md {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 41px;
+     }
+  }
+}
+
+.catalog__cards {
+  display: flex;
+  justify-content: center;
+
+  @include viewport--md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  @include viewport--sm {
+    display: flex;
+    flex-direction: column;
+  }
+}
