@@ -1,0 +1,132 @@
+.video {
+  margin-bottom: 151px;
+  position: relative;
+  padding-top: 120px;
+  background-color: #131314;
+  text-align: center;
+
+  @include viewport--md {
+    margin-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  @include viewport--sm {
+    padding-top: 83px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: $color-default-white;
+    height: 98px;
+    width: 100%;
+
+    @include viewport--md {
+      height: 85px;
+    }
+
+    @include viewport--sm {
+      height: 48px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-right: 8px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: $color-default-white;
+    letter-spacing: -0.005em;
+
+    @include viewport--md {
+      margin-bottom: 22px;
+      padding-right: 0;
+      font-size: 24px;
+    }
+
+    @include viewport--sm {
+      padding-right: 8px;
+    }
+  }
+
+  p {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-default-white;
+    opacity: 0.7;
+
+    @include viewport--md {
+      width: 430px;
+      margin-bottom: 38px;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.video__content {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  z-index: 5;
+
+  img {
+    width: 929px;
+
+    @include viewport--md {
+      width: 503px;
+    }
+  }
+
+  button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: $maincolor;
+
+    @include viewport--md {
+      width: 90px;
+      height: 90px;
+
+      svg {
+        width: 22px;
+        height: 27px;
+        padding-left: 4px;
+        padding-top: 3px;
+      }
+    }
+
+    @include viewport--sm {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &:hover button {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:focus,
+  button:focus,
+  svg:focus {
+    outline: none;
+  }
+}

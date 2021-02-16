@@ -5,7 +5,12 @@
   text-align: center;
 
   @include viewport--md {
+    margin-bottom: 72px;
     padding-top: 50px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 18px;
   }
 }
 

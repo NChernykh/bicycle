@@ -42,14 +42,18 @@
       padding-left: 47px;
     }
 
+    &:last-child {
+      margin-right: 0;
+
+      @include viewport--sm {
+        margin: 0 auto;
+      }
+    }
+
     &:hover,
     &:focus,
     &:active {
       color: $color-default-black;
-    }
-
-    &:last-child {
-      margin: 0 auto;
     }
   }
 

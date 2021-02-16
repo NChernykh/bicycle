@@ -164,7 +164,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.webp, ../img/content/card-1-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/card-1-desktop@1x.webp, ../img/content/card-1-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.jpg, ../img/content/card-1-tablet@2x.jpg 2x">
-                <img class="card__img" src="../img/content/card-1-desktop@1x.jpg" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
+                <img class="card__img" src="../img/content/card-1-desktop@1x.jpg" srcset="../img/content/card-1-desktop@2x.jpg 2x" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
               </picture>
               <h3 class="card__title">Дорожный велосипед</h3>
             </div>
@@ -173,7 +173,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-2-tablet@1x.webp, ../img/content/card-2-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/card-2-desktop@1x.webp, ../img/content/card-2-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="../img/content/card-2-tablet@1x.jpg, ../img/content/card-2-tablet@2x.jpg 2x">
-                <img class="card__img" src="../img/content/card-2-desktop@1x.jpg" width="342" height="566" alt="Черный горный велосипед">
+                <img class="card__img" src="../img/content/card-2-desktop@1x.jpg" srcset="../img/content/card-2-desktop@2x.jpg 2x" width="342" height="566" alt="Черный горный велосипед">
               </picture>
               <h3 class="card__title">Горный велосипед</h3>
             </div>
@@ -182,10 +182,33 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.webp, ../img/content/card-3-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/card-3-desktop@1x.webp, ../img/content/card-3-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.jpg, ../img/content/card-3-tablet@2x.jpg 2x">
-                <img class="card__img" src="../img/content/card-3-desktop@1x.jpg" width="342" height="513" alt="Розовый детский велосипед">
+                <img class="card__img" src="../img/content/card-3-desktop@1x.jpg" srcset="../img/content/card-3-desktop@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед">
               </picture>
               <h3 class="card__title">Детский велосипед</h3>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+          <div class="video__content">
+            <a class="video__link" href="https://www.youtube.com/">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="../img/content/video-mobile@1x.webp 1x, ../img/content/video-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.webp 1x, ..img/content/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="../img/content/video-desktop@1x.jpg, ../img/content/video-desktop@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/content/video-mobile@1x.jpg 1x, ../img/content/video-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.jpg 1x, ../img/content/video-tablet@2x.jpg 2x">
+                <img class="video__media" src="../img/content/video-desktop@1x.jpg" srcset="../img/content/video-desktop@2x.jpg 2x" alt="Как выбрать себе велосипед">
+              </picture>
+            </a>
+            <button class="video-content__btn" aria-label="Запустить видео">
+              <svg class="video-content__icon" width="13" height="19">
+                <use xlink:href="../img/sprite_auto.svg#icon-play"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
