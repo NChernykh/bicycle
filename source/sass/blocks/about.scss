@@ -2,12 +2,12 @@
   margin-bottom: 150px;
 
   @include viewport--md {
-   margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 
   @include viewport--sm {
     margin-bottom: 43px;
-   }
+  }
 }
 
 .about__container {
@@ -59,7 +59,7 @@
 
     @include viewport--sm {
       margin: 0 auto;
-      margin-bottom: 36px;
+      margin-bottom: 35px;
     }
 
     h3 {

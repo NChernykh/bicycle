@@ -19,16 +19,18 @@
   }
 }
 
-//.main-nav--opened .header__logo {
-//  display: none;
-//}
-
 .main-nav--opened .main-nav__toggle {
   top: 15px;
   right: 17px;
   width: 23px;
   height: 23px;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    outline: none;
+  }
 
   &::before,
   &::after {
@@ -50,8 +52,10 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
-    background-color: rgba($color-default-black, 0.3);
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $color-default-black;
   }
 }

@@ -6,7 +6,7 @@
   <title>ProjectName — Главная</title>
 
 </head>
-<body style="opacity: 0.5;">
+<body style="opacity: 1;">
 
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
@@ -30,7 +30,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__container">
           <h2 class="about__title">Несколько фактов о нас</h2>
           <ul class="about__list">
@@ -53,41 +53,47 @@
           </ul>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog__container">
-          <h2 class="caralog__title">Виды велосипедов</h2>
+          <h2 class="catalog__title">Виды велосипедов</h2>
           <div class="catalog__cards">
             <div class="card card--1">
-              <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.webp, ../img/content/card-1-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="../img/content/card-1-desktop@1x.webp, ../img/content/card-1-desktop@2x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.jpg, ../img/content/card-1-tablet@2x.jpg 2x">
-                <img class="card__img" src="../img/content/card-1-desktop@1x.jpg" srcset="../img/content/card-1-desktop@2x.jpg 2x" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
-              </picture>
+              <a href="" class="card__link">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.webp, ../img/content/card-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="../img/content/card-1-desktop@1x.webp, ../img/content/card-1-desktop@2x.webp 2x">
+                  <!--1x: 342px; 2x:684px-->
+                  <img class="card__img" src="../img/content/card-1-desktop@1x.jpg" srcset="../img/content/card-1-desktop@2x.jpg 2x" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
+                </picture>
+              </a>
               <h3 class="card__title">Дорожный велосипед</h3>
             </div>
             <div class="card card--2">
-              <picture>
+              <a href="" class="card__link">
+                <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-2-tablet@1x.webp, ../img/content/card-2-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/card-2-desktop@1x.webp, ../img/content/card-2-desktop@2x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="../img/content/card-2-tablet@1x.jpg, ../img/content/card-2-tablet@2x.jpg 2x">
+                <!--1x: 342px; 2x:684px-->
                 <img class="card__img" src="../img/content/card-2-desktop@1x.jpg" srcset="../img/content/card-2-desktop@2x.jpg 2x" width="342" height="566" alt="Черный горный велосипед">
               </picture>
+              </a>
               <h3 class="card__title">Горный велосипед</h3>
             </div>
             <div class="card card--3">
-              <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.webp, ../img/content/card-3-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="../img/content/card-3-desktop@1x.webp, ../img/content/card-3-desktop@2x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.jpg, ../img/content/card-3-tablet@2x.jpg 2x">
-                <img class="card__img" src="../img/content/card-3-desktop@1x.jpg" srcset="../img/content/card-3-desktop@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед">
-              </picture>
+              <a href="#" class="card__link">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.webp, ../img/content/card-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="../img/content/card-3-desktop@1x.webp, ../img/content/card-3-desktop@2x.webp 2x">
+                  <!--1x: 342px; 2x:684px-->
+                  <img class="card__img" src="../img/content/card-3-desktop@1x.jpg" srcset="../img/content/card-3-desktop@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед">
+                </picture>
+              </a>
               <h3 class="card__title">Детский велосипед</h3>
             </div>
           </div>
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <div class="container">
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
@@ -95,26 +101,25 @@
             <a class="video__link" href="https://www.youtube.com/">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="../img/content/video-mobile@1x.webp 1x, ../img/content/video-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.webp 1x, ..img/content/video-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.webp 1x, ../img/content/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/video-desktop@1x.jpg, ../img/content/video-desktop@2x.jpg 2x">
-                <source media="(max-width: 767px)" srcset="../img/content/video-mobile@1x.jpg 1x, ../img/content/video-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.jpg 1x, ../img/content/video-tablet@2x.jpg 2x">
+                <!--1x: 929px; 2x:1858px-->
                 <img class="video__media" src="../img/content/video-desktop@1x.jpg" srcset="../img/content/video-desktop@2x.jpg 2x" alt="Как выбрать себе велосипед">
               </picture>
             </a>
-            <button class="video-content__btn" aria-label="Запустить видео">
-              <svg class="video-content__icon" width="13" height="19">
+            <button class="video__btn" aria-label="Запустить видео">
+              <svg class="video__icon" width="13" height="19">
                 <use xlink:href="../img/sprite_auto.svg#icon-play"></use>
               </svg>
             </button>
           </div>
         </div>
       </section>
-      <section class="map">
+      <section class="map" id="map">
         <div class="map__container">
           <h2 class="map__title">Как нас найти?</h2>
           <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <iframe class="map__img"  height="530" style="border:0;" allowfullscreen title="ул. Большая Конюшенная, 19/8, офис 101, Санкт-Петербург" tabindex="0"></iframe>
+          <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853350878192!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589553581861!5m2!1sru!2sru" height="530" style="border:0;" allowfullscreen title="ул. Большая Конюшенная, 19/8, офис 101, Санкт-Петербург" tabindex="0"></iframe>
         </div>
       </section>
     </main>

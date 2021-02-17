@@ -6,11 +6,11 @@
 
   @include viewport--md {
     margin-bottom: 72px;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 
   @include viewport--sm {
-    margin-bottom: 18px;
+    margin-bottom: 55px;
   }
 }
 
@@ -41,7 +41,7 @@
       margin-bottom: 30px;
       font-size: 24px;
       line-height: 41px;
-     }
+    }
   }
 }
 
@@ -50,10 +50,7 @@
   justify-content: center;
 
   @include viewport--md {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 50px;
+    flex-wrap: wrap;
   }
 
   @include viewport--sm {
