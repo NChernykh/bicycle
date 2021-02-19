@@ -10,26 +10,19 @@ $color-transparent:               rgba(255, 255, 255, 0);
 
 // Base
 
-$color-black:                     #0e0e0e;
-$color-white:                     #f2f2f2;
 $maincolor:                       #0ad9c6;
-$input-text-color:                #1c1c1c;
-$input-border-color:              #c9ccd4;
-
-// Gradient
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-black:                     #1f1f1f;
+$color-white:                     #f6f6f6;
+$color-lightgray:                 #f6f7f9;
+$color-gray:                      #48494d;
+$color-darkgray:                  #141517;
+$color-nero:                      #1c1c1c;
+$color-link-water:                #c9ccd4;
 
 // Typography
 //---------------------------------
 
 $font-family--:                     "Open Sans", "Arial", sans-serif;
-
-// Animation
-//---------------------------------
-
-$default-transition-settings:       0.3s ease;
-$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
 // Viewports
 //---------------------------------

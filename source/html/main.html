@@ -23,72 +23,73 @@
         <div class="container">
           <div class="intro__content">
             <div class="intro__column">
+              <a class="intro__logo" @@if (!context.main) { href="main.html" } aria-label="Переход на главную">
+                <img src="img/svg/logo.svg" width="68" height="21" alt="Логотип Велосипеды">
+              </a>
               <h2 class="intro__title">Мы продаем велосипеды</h2>
               <p class="intro__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
             </div>
-            @@include("source/html/components/form.html")
+            <div class="intro__form">
+              @@include("source/html/components/form.html")
+            </div>
           </div>
         </div>
       </section>
       <section class="about" id="about">
-        <div class="about__container">
+        <div class="container about__container">
           <h2 class="about__title">Несколько фактов о нас</h2>
-          <ul class="about__list">
-            <li class="about__item">
-              <h3 class="about__number">01</h3>
+          <ol class="about__list">
+            <li class="about__list-item">
               <p class="about__text">Самый широкий выбор велосипедов!</p>
             </li>
-            <li class="about__item">
-              <h3 class="about__number">02</h3>
+            <li class="about__list-item">
               <p class="about__text">Доставка велосипедов по всей России!</p>
             </li>
-            <li class="about__item">
-              <h3 class="about__number">03</h3>
+            <li class="about__list-item">
               <p class="about__text">Большой выбор крутых аксессуаров!</p>
             </li>
-            <li class="about__item">
-              <h3 class="about__number">04</h3>
+            <li class="about__list-item">
               <p class="about__text">Профессиональные консультации!</p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="catalog" id="catalog">
         <div class="catalog__container">
           <h2 class="catalog__title">Виды велосипедов</h2>
           <div class="catalog__cards">
-            <div class="card card--1">
-              <a href="" class="card__link">
+            <div class="card card--position card--decor">
+              <a href="#">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-1-tablet@1x.webp, ../img/content/card-1-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="../img/content/card-1-desktop@1x.webp, ../img/content/card-1-desktop@2x.webp 2x">
                   <!--1x: 342px; 2x:684px-->
-                  <img class="card__img" src="../img/content/card-1-desktop@1x.jpg" srcset="../img/content/card-1-desktop@2x.jpg 2x" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
+                  <img src="../img/content/card-1-desktop@1x.jpg" srcset="../img/content/card-1-desktop@2x.jpg 2x" width="342" height="503" alt="Белый дорожный велосипед с корзиной">
                 </picture>
               </a>
-              <h3 class="card__title">Дорожный велосипед</h3>
+              <h3>Дорожный велосипед</h3>
             </div>
-            <div class="card card--2">
-              <a href="" class="card__link">
+            <div class="card card--position card--decor">
+              <a href="#">
                 <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-2-tablet@1x.webp, ../img/content/card-2-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/card-2-desktop@1x.webp, ../img/content/card-2-desktop@2x.webp 2x">
                 <!--1x: 342px; 2x:684px-->
-                <img class="card__img" src="../img/content/card-2-desktop@1x.jpg" srcset="../img/content/card-2-desktop@2x.jpg 2x" width="342" height="566" alt="Черный горный велосипед">
+                <img src="../img/content/card-2-desktop@1x.jpg" srcset="../img/content/card-2-desktop@2x.jpg 2x" width="342" height="566" alt="Черный горный велосипед">
               </picture>
               </a>
-              <h3 class="card__title">Горный велосипед</h3>
+              <h3>Горный велосипед</h3>
             </div>
-            <div class="card card--3">
-              <a href="#" class="card__link">
+            <div class="card card--position card--decor">
+              <a href="#">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/card-3-tablet@1x.webp, ../img/content/card-3-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="../img/content/card-3-desktop@1x.webp, ../img/content/card-3-desktop@2x.webp 2x">
                   <!--1x: 342px; 2x:684px-->
-                  <img class="card__img" src="../img/content/card-3-desktop@1x.jpg" srcset="../img/content/card-3-desktop@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед">
+                  <img src="../img/content/card-3-desktop@1x.jpg" srcset="../img/content/card-3-desktop@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед">
                 </picture>
               </a>
-              <h3 class="card__title">Детский велосипед</h3>
+              <h3>Детский велосипед</h3>
             </div>
           </div>
         </div>
@@ -104,14 +105,10 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="../img/content/video-tablet@1x.webp 1x, ../img/content/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="../img/content/video-desktop@1x.jpg, ../img/content/video-desktop@2x.jpg 2x">
                 <!--1x: 929px; 2x:1858px-->
-                <img class="video__media" src="../img/content/video-desktop@1x.jpg" srcset="../img/content/video-desktop@2x.jpg 2x" alt="Как выбрать себе велосипед">
+                <img class="video__media" src="../img/content/video-desktop@1x.jpg" srcset="../img/content/video-desktop@2x.jpg 2x" width="929" height="522" alt="Как выбрать себе велосипед">
               </picture>
             </a>
-            <button class="video__btn" aria-label="Запустить видео">
-              <svg class="video__icon" width="13" height="19">
-                <use xlink:href="../img/sprite_auto.svg#icon-play"></use>
-              </svg>
-            </button>
+            @@include("source/html/components/video__btn.html")
           </div>
         </div>
       </section>
@@ -119,23 +116,15 @@
         <div class="map__container">
           <h2 class="map__title">Как нас найти?</h2>
           <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853350878192!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589553581861!5m2!1sru!2sru" height="530" style="border:0;" allowfullscreen title="ул. Большая Конюшенная, 19/8, офис 101, Санкт-Петербург" tabindex="0"></iframe>
+          <div class="map__content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853350878192!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589553581861!5m2!1sru!2sru" height="530" style="border:0;" allowfullscreen title="ул. Большая Конюшенная, 19/8, офис 101, Санкт-Петербург" tabindex="0"></iframe>
+          </div>
         </div>
       </section>
     </main>
 
     @@include("source/html/base/footer.html")
 
-    @@include("source/html/base/modal.html", {
-      "name": "feedback"
-    })
-
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
   </div>
 
   <script src="js/vendor.min.js"></script>

@@ -5,93 +5,68 @@
 .footer__container {
   min-height: 100px;
   margin: 0 auto;
-  padding: 33px 100px 80px;
+  padding: 40px 30px 80px;
 
   @include viewport--md {
-    padding-top: 15px;
+    padding-top: 18px;
     padding-bottom: 54px;
   }
 
   @include viewport--sm {
-    padding: 24px 22px 50px;
+    padding: 30px 22px 50px;
   }
 }
 
 .footer__contacts {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 
   @include viewport--sm {
+    display: flex;
     flex-direction: column;
     text-align: center;
   }
+}
 
-  a {
-    position: relative;
-    margin-right: 105px;
-    padding-left: 22px;
-    font-size: 16px;
-    line-height: 22px;
-    color: #808080;
+.footer__item {
+  position: relative;
+  margin-right: 86px;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: fade-out($color-default-black, 0.5);
+
+  @include viewport--sm {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding-left: 46px;
+  }
+
+  &:last-child {
+    margin-right: 15px;
 
     @include viewport--md {
-      margin-right: 98px;
-      padding-left: 30px;
+      margin-right: 10px;
     }
 
     @include viewport--sm {
-      width: fit-content;
-      margin: 0 auto;
-      margin-bottom: 24px;
-      padding-left: 47px;
-    }
-
-    &:last-child {
-      margin-right: 0;
-
-      @include viewport--sm {
-        margin: 0 auto;
-      }
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color-default-black;
+      margin-right: 50px;
     }
   }
 
-  .footer__item--phone {
-    @include viewport--sm {
-      padding-left: 25px;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-default-black;
   }
 }
 
 .footer__icon {
   position: absolute;
   top: 0;
-  left: -19px;
-  stroke: #d7d9df;
+  left: 0;
   fill: none;
-
-  @include viewport--md {
-    left: -10px;
-  }
 
   @include viewport--sm {
     left: 8px;
-  }
-
-  &--phone {
-    left: -13px;
-
-    @include viewport--md {
-      left: -6px;
-    }
-
-    @include viewport--sm {
-      left: -10px;
-    }
   }
 }

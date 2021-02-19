@@ -4,15 +4,11 @@ const mainNav = document.querySelector('.main-nav');
 
 const initBurger = () => {
 
-  mainNav.classList.remove('main-nav--nojs');
-  mainNav.classList.remove('main-nav--opened');
-  header.classList.remove('header__wrapper--nojs');
-  mainNav.classList.add('main-nav--closed');
+  mainNav.classList.remove('main-nav--nojs', 'main-nav--opened');
 
   navToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('main-nav--closed');
     mainNav.classList.toggle('main-nav--opened');
-    header.classList.toggle('header__wrapper--opened');
+    header.classList.toggle('header__wrapper--js');
   });
 };
 

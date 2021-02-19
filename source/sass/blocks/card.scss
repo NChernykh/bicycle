@@ -29,94 +29,6 @@
     }
   }
 
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    width: 95px;
-    height: 95px;
-    left: 1067px;
-    top: -41px;
-    border: 17px solid $maincolor;
-    border-radius: 50%;
-
-    @media (max-width: 1200px) {
-      content: none;
-    }
-  }
-
-  &::before {
-    @include viewport--md {
-      content: "";
-      width: 68px;
-      height: 68px;
-      left: 226px;
-      top: -20px;
-      border-width: 13px;
-    }
-  }
-
-  &--1 {
-    margin-top: 10px;
-    z-index: 1;
-
-    @include viewport--md {
-      margin-top: 0;
-    }
-
-    &::before {
-      position: absolute;
-      width: 175px;
-      height: 175px;
-      left: -62px;
-      top: 160px;
-      border: 27px solid $maincolor;
-      z-index: -1;
-
-      @include viewport--md {
-        content: "";
-        width: 127px;
-        height: 127px;
-        left: -36px;
-        top: 203px;
-        border-width: 18px;
-      }
-
-      @include viewport--sm {
-        left: -25px;
-        top: 200px;
-      }
-    }
-  }
-
-  &--2 {
-    margin-top: 40px;
-
-    @include viewport--md {
-      margin-top: 0;
-    }
-
-    &::before,
-    &::after {
-      width: 47px;
-      height: 47px;
-      left: -20px;
-      top: -18px;
-      border: 8px solid $maincolor;
-      z-index: 5;
-      border-radius: 0;
-
-      @include viewport--md {
-        content: none;
-      }
-    }
-
-    &::after {
-      left: 318px;
-      top: 541px;
-    }
-  }
-
   a {
     z-index: 2;
     margin-bottom: 20px;
@@ -124,7 +36,7 @@
     cursor: pointer;
 
     &:hover {
-      opacity: 0.2;
+      opacity: 0.8;
     }
 
     @include viewport--md {
@@ -149,4 +61,96 @@
     line-height: 34px;
     letter-spacing: -0.5px;
   }
+}
+
+.card--position:nth-child(3n + 1) {
+  margin-top: 10px;
+  z-index: 1;
+
+  @include viewport--md {
+    margin-top: 0;
+  }
+}
+
+.card--position:nth-child(2n) {
+  margin-top: 40px;
+
+  @include viewport--md {
+    margin-top: 0;
+  }
+}
+
+.card--decor::before,
+.card--decor::after {
+  position: absolute;
+  content: "";
+  width: 95px;
+  height: 95px;
+  left: 1067px;
+  top: -41px;
+  border: 17px solid $maincolor;
+  border-radius: 50%;
+
+  @media (max-width: 1200px) {
+    content: none;
+  }
+}
+
+.card--decor::before {
+  @include viewport--md {
+    content: "";
+    width: 68px;
+    height: 68px;
+    left: 226px;
+    top: -20px;
+    border-width: 13px;
+  }
+
+  @include viewport--sm {
+    left: 216px;
+  }
+}
+
+.card--decor:nth-child(3n + 1)::before {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  left: -62px;
+  top: 160px;
+  border: 27px solid $maincolor;
+  z-index: -1;
+
+  @include viewport--md {
+    content: "";
+    width: 127px;
+    height: 127px;
+    left: -36px;
+    top: 203px;
+    border-width: 18px;
+  }
+
+  @include viewport--sm {
+    left: -25px;
+    top: 200px;
+  }
+}
+
+.card--decor:nth-child(2n)::before,
+.card--decor:nth-child(2n)::after {
+  width: 47px;
+  height: 47px;
+  left: -20px;
+  top: -18px;
+  border: 8px solid $maincolor;
+  z-index: 5;
+  border-radius: 0;
+
+  @include viewport--md {
+    content: none;
+  }
+}
+
+.card--decor:nth-child(2n)::after {
+  left: 318px;
+  top: 541px;
 }

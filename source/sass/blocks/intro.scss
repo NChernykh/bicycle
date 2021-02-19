@@ -2,12 +2,12 @@
   position: relative;
   top: -65px;
   margin-bottom: 84px;
-  background-color: $color-black;
+  background-color: $color-default-black;
   background-image: url("../../img/bg/intro-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: $color-white;
+  color: $color-default-white;
 
   @include retina {
     background-image: url("../../img/bg/intro-bg-desktop@2x.jpg");
@@ -44,13 +44,17 @@
       background-image: url("../../img/bg/intro-bg-mobile@2x.jpg");
       background-size: 479px auto;
     }
+
+    &::after {
+      height: 42.5%;
+    }
   }
 }
 
 .intro__content {
   position: relative;
   margin: 0 auto;
-  padding-top: 327px;
+  padding-top: 320px;
   padding-bottom: 240px;
   max-width: 880px;
   display: flex;
@@ -68,34 +72,33 @@
     padding-top: 124px;
     padding-bottom: 70px;
   }
+}
 
-  h2 {
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 46px;
-    line-height: 64px;
+.intro__logo {
+  margin-bottom: 30px;
+  display: block;
 
-    @include viewport--md {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 30px;
-      line-height: 42px;
-    }
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.intro__form {
+  padding-top: 5px;
+  width: 327px;
+
+  @include viewport--md {
+    padding-top: 0;
+    z-index: 2;
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    width: 324px;
   }
 
-  p {
-    margin: 0;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 32px;
-    opacity: 0.8;
-
-    @include viewport--md {
-      font-size: 18px;
-      line-height: 32px;
-    }
+  @include viewport--sm {
+    width: 288px;
+    top: 140px;
   }
 }
 
@@ -104,5 +107,32 @@
 
   @include viewport--md {
     width: 100%;
+  }
+}
+
+.intro__title {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+
+  @include viewport--md {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.intro__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+
+  @include viewport--md {
+    font-size: 18px;
+    line-height: 32px;
   }
 }

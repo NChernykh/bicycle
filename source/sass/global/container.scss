@@ -15,10 +15,4 @@
   @include viewport--sm {
     padding: 0 15px;
   }
-
-  &--no-padding {
-    @include viewport--sm {
-      padding: 0;
-    }
-  }
 }

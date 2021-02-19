@@ -10,77 +10,78 @@
   @include viewport--sm {
     margin: 0;
   }
+}
 
-  h2 {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-right: 10px;
-    font-weight: 600;
-    font-size: 30px;
+.map__title {
+  margin-bottom: 30px;
+  padding-right: 10px;
+  color: $color-black;
+
+  @include viewport--md {
+    margin-bottom: 22px;
+    padding-right: 0;
+    font-size: 24px;
     line-height: 30px;
-    color: #1f1f1f;
-    letter-spacing: -0.005em;
+  }
 
-    @include viewport--md {
-      margin-bottom: 22px;
-      padding-right: 0;
-      font-size: 24px;
-      line-height: 30px;
-    }
+  @include viewport--sm {
+    font-size: 18px;
+  }
+}
 
-    @include viewport--sm {
-      font-size: 18px;
+.map__text {
+  margin: 0 186px 40px;
+  padding-right: 15px;
+  font-size: 17px;
+  line-height: 31px;
+  color: fade-out($color-default-black, 0.2);
+
+  @include viewport--md {
+    margin: 0 15px 20px;
+    padding-right: 0;
+  }
+
+  @include viewport--sm {
+    margin: 0 25px 20px;
+  }
+}
+
+.map__content {
+  width: 100%;
+  height: 530px;
+  background-color: $color-gray;
+  background-image: url("../../img/bg/map-desktop@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../../img/bg/map-desktop@2x.png");
+    background-size: 1914px auto;
+  }
+
+  @include viewport--md {
+    height: 545px;
+    background-image: url("../../img/bg/map-tablet@1x.png");
+
+    @include retina {
+      background-image: url("../../img/bg/map-tablet@2x.png");
+      background-size: 1396px auto;
     }
   }
 
-  p {
-    margin: 0 186px 40px;
-    padding-right: 15px;
-    font-size: 17px;
-    line-height: 31px;
-    color: #4d4d4d;
+  @include viewport--sm {
+    height: 250px;
+    background-image: url("../../img/bg/map-mobile@1x.png");
 
-    @include viewport--md {
-      margin: 0 15px 20px;
-      padding-right: 0;
-    }
-
-    @include viewport--sm {
-      margin: 0 25px 20px;
+    @include retina {
+      background-image: url("../../img/bg/map-mobile@2x.png");
+      background-size: 638px auto;
     }
   }
 
   iframe {
     width: 100%;
-    background-color: #d36262;
-    background-image: url("../../img/bg/map-desktop@1x.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include retina {
-      background-image: url("../../img/bg/map-desktop@2x.png");
-      background-size: 1914px auto;
-    }
-
-    @include viewport--md {
-      height: 545px;
-      background-image: url("../../img/bg/map-tablet@1x.png");
-
-      @include retina {
-        background-image: url("../../img/bg/map-tablet@2x.png");
-        background-size: 1396px auto;
-      }
-    }
-
-    @include viewport--sm {
-      height: 250px;
-      background-image: url("../../img/bg/map-mobile@1x.png");
-
-      @include retina {
-        background-image: url("../../img/bg/map-mobile@2x.png");
-        background-size: 638px auto;
-      }
-    }
+    height: 100%;
   }
 }

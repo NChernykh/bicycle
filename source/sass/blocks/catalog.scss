@@ -1,6 +1,6 @@
 .catalog {
   margin-bottom: 150px;
-  background-color: #f6f7f9;
+  background-color: $color-lightgray;
   padding-top: 150px;
   text-align: center;
 
@@ -27,21 +27,16 @@
   @include viewport--sm {
     padding: 0 25px;
   }
+}
 
-  h2 {
-    margin: 0;
-    margin-bottom: 50px;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: -0.005em;
-    color: #1f1f1f;
+.catalog__title {
+  margin-bottom: 50px;
+  color: #1f1f1f;
 
-    @include viewport--md {
-      margin-bottom: 30px;
-      font-size: 24px;
-      line-height: 41px;
-    }
+  @include viewport--md {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 

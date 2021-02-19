@@ -2,7 +2,7 @@
   margin-bottom: 151px;
   position: relative;
   padding-top: 120px;
-  background-color: #131314;
+  background-color: $color-darkgray;
   text-align: center;
 
   @include viewport--md {
@@ -31,47 +31,42 @@
       height: 48px;
     }
   }
+}
 
-  h2 {
-    margin: 0;
+.video__title {
+  margin-bottom: 20px;
+  padding-right: 8px;
+  color: $color-default-white;
+
+  @include viewport--md {
     margin-bottom: 20px;
-    padding-right: 8px;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 30px;
-    color: $color-default-white;
-    letter-spacing: -0.005em;
-
-    @include viewport--md {
-      margin-bottom: 20px;
-      padding-right: 0;
-      font-size: 24px;
-    }
-
-    @include viewport--sm {
-      padding-right: 8px;
-    }
+    padding-right: 0;
+    font-size: 24px;
   }
 
-  p {
-    width: 350px;
-    margin: 0 auto;
-    margin-bottom: 55px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    color: $color-default-white;
-    opacity: 0.7;
+  @include viewport--sm {
+    padding-right: 8px;
+  }
+}
 
-    @include viewport--md {
-      width: 430px;
-      margin-bottom: 38px;
-    }
+.video__text {
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-default-white;
+  opacity: 0.7;
 
-    @include viewport--sm {
-      width: 100%;
-      margin-bottom: 52px;
-    }
+  @include viewport--md {
+    width: 430px;
+    margin-bottom: 38px;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    margin-bottom: 52px;
   }
 }
 
