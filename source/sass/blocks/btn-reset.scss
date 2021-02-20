@@ -11,11 +11,11 @@
     height: 50px;
     cursor: pointer;
     border: none;
-    background-color: $maincolor;
+    background-color: $color-robins-egg-blue;
   }
 
   &:hover,
   &:focus {
-    background-color: fade-out($maincolor, 0.2);
+    background-color: fade-out($color-robins-egg-blue, 0.2);
   }
 }

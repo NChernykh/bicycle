@@ -4,12 +4,14 @@ const mainNav = document.querySelector('.main-nav');
 
 const initBurger = () => {
 
-  mainNav.classList.remove('main-nav--nojs', 'main-nav--opened');
+  if (mainNav) {
+    mainNav.classList.remove('main-nav--nojs', 'main-nav--opened');
 
-  navToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('main-nav--opened');
-    header.classList.toggle('header__wrapper--js');
-  });
+    navToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('main-nav--opened');
+      header.classList.toggle('header__wrapper--js');
+    });
+  }
 };
 
 export {initBurger};

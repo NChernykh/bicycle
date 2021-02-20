@@ -88,7 +88,7 @@
   height: 95px;
   left: 1067px;
   top: -41px;
-  border: 17px solid $maincolor;
+  border: 17px solid $color-robins-egg-blue;
   border-radius: 50%;
 
   @media (max-width: 1200px) {
@@ -117,7 +117,7 @@
   height: 175px;
   left: -62px;
   top: 160px;
-  border: 27px solid $maincolor;
+  border-width: 27px;
   z-index: -1;
 
   @include viewport--md {
@@ -141,7 +141,7 @@
   height: 47px;
   left: -20px;
   top: -18px;
-  border: 8px solid $maincolor;
+  border-width: 8px;
   z-index: 5;
   border-radius: 0;
 

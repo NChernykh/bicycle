@@ -1,35 +1,30 @@
 .video {
-  margin-bottom: 151px;
-  position: relative;
-  padding-top: 120px;
+  margin-bottom: 250px;
+  padding-bottom: 22px;
   background-color: $color-darkgray;
   text-align: center;
 
   @include viewport--md {
-    margin-bottom: 70px;
-    padding-top: 70px;
+    margin-bottom: 140px;
+    padding-bottom: 0;
   }
 
   @include viewport--sm {
-    padding-top: 83px;
+    margin-bottom: 119px;
+    padding-bottom: 33px;
+  }
+}
+
+.video__container {
+  position: relative;
+  bottom: -120px;
+
+  @include viewport--md {
+    bottom: -70px;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    background-color: $color-default-white;
-    height: 98px;
-    width: 100%;
-
-    @include viewport--md {
-      height: 85px;
-    }
-
-    @include viewport--sm {
-      height: 48px;
-    }
+  @include viewport--sm {
+    bottom: -83px;
   }
 }
 
@@ -61,7 +56,7 @@
 
   @include viewport--md {
     width: 430px;
-    margin-bottom: 38px;
+    margin-bottom: 24px;
   }
 
   @include viewport--sm {
@@ -75,6 +70,14 @@
   margin: 0 auto;
   width: fit-content;
   z-index: 5;
+
+  @include viewport--md {
+    top: 15px;
+  }
+
+  @include viewport--md {
+    top: 0;
+  }
 
   img {
     width: 929px;
@@ -94,7 +97,7 @@
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
-    background-color: $maincolor;
+    background-color: $color-robins-egg-blue;
     cursor: pointer;
 
     @include viewport--md {

@@ -25,13 +25,13 @@ form {
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
-    background: $maincolor;
+    background: $color-robins-egg-blue;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 
     &:hover {
-      background-color: fade-out($maincolor, 0.2);
+      background-color: fade-out($color-robins-egg-blue, 0.2);
     }
   }
 }
