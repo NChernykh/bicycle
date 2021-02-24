@@ -3,25 +3,25 @@
   top: -65px;
   margin-bottom: 84px;
   background-color: $color-default-black;
-  background-image: url("../../img/bg/intro-bg-desktop@1x.jpg");
+  background-image: url("../img/bg/intro-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: $color-default-white;
 
   @include retina {
-    background-image: url("../../img/bg/intro-bg-desktop@2x.jpg");
+    background-image: url("../img/bg/intro-bg-desktop@2x.jpg");
     background-size: 2160px auto;
   }
 
   @include viewport--md {
     margin-bottom: 78px;
-    background-image: url("../../img/bg/intro-bg-tablet@1x.jpg");
+    background-image: url("../img/bg/intro-bg-tablet@1x.jpg");
     background-size: contain;
     background-position: top;
 
     @include retina {
-      background-image: url("../../img/bg/intro-bg-tablet@2x.jpg");
+      background-image: url("../img/bg/intro-bg-tablet@2x.jpg");
       background-size: 1151px auto;
     }
 
@@ -38,10 +38,10 @@
 
   @include viewport--sm {
     background-size: 100% auto;
-    background-image: url("../../img/bg/intro-bg-mobile@1x.jpg");
+    background-image: url("../img/bg/intro-bg-mobile@1x.jpg");
 
     @include retina {
-      background-image: url("../../img/bg/intro-bg-mobile@2x.jpg");
+      background-image: url("../img/bg/intro-bg-mobile@2x.jpg");
       background-size: 479px auto;
     }
 
