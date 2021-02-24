@@ -50,32 +50,32 @@
   width: 100%;
   height: 530px;
   background-color: $color-gray;
-  background-image: url("../../img/bg/map-desktop@1x.png");
+  background-image: url("../img/bg/map-desktop@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include retina {
-    background-image: url("../../img/bg/map-desktop@2x.png");
+    background-image: url("../img/bg/map-desktop@2x.png");
     background-size: 1914px auto;
   }
 
   @include viewport--md {
     height: 545px;
-    background-image: url("../../img/bg/map-tablet@1x.png");
+    background-image: url("../img/bg/map-tablet@1x.png");
 
     @include retina {
-      background-image: url("../../img/bg/map-tablet@2x.png");
+      background-image: url("../img/bg/map-tablet@2x.png");
       background-size: 1396px auto;
     }
   }
 
   @include viewport--sm {
     height: 250px;
-    background-image: url("../../img/bg/map-mobile@1x.png");
+    background-image: url("../img/bg/map-mobile@1x.png");
 
     @include retina {
-      background-image: url("../../img/bg/map-mobile@2x.png");
+      background-image: url("../img/bg/map-mobile@2x.png");
       background-size: 638px auto;
     }
   }

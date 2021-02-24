@@ -49,7 +49,8 @@
     }
 
     @include viewport--sm {
-      margin-right: 50px;
+      margin: 0 auto;
+      padding-right: 23px;
     }
   }
 

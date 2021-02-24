@@ -644,7 +644,8 @@ h2 {
         margin-right: 10px; } }
     @media (max-width: 767px) {
       .footer__item:last-child {
-        margin-right: 50px; } }
+        margin: 0 auto;
+        padding-right: 23px; } }
   .footer__item:hover, .footer__item:focus, .footer__item:active {
     color: #000000; }
 
@@ -1106,29 +1107,29 @@ form button {
   width: 100%;
   height: 530px;
   background-color: #48494d;
-  background-image: url("../../img/bg/map-desktop@1x.png");
+  background-image: url("../img/bg/map-desktop@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .map__content {
-      background-image: url("../../img/bg/map-desktop@2x.png");
+      background-image: url("../img/bg/map-desktop@2x.png");
       background-size: 1914px auto; } }
   @media (max-width: 1023px) {
     .map__content {
       height: 545px;
-      background-image: url("../../img/bg/map-tablet@1x.png"); } }
+      background-image: url("../img/bg/map-tablet@1x.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 192dpi), (max-width: 1023px) and (min-resolution: 2dppx) {
     .map__content {
-      background-image: url("../../img/bg/map-tablet@2x.png");
+      background-image: url("../img/bg/map-tablet@2x.png");
       background-size: 1396px auto; } }
   @media (max-width: 767px) {
     .map__content {
       height: 250px;
-      background-image: url("../../img/bg/map-mobile@1x.png"); } }
+      background-image: url("../img/bg/map-mobile@1x.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
     .map__content {
-      background-image: url("../../img/bg/map-mobile@2x.png");
+      background-image: url("../img/bg/map-mobile@2x.png");
       background-size: 638px auto; } }
   .map__content iframe {
     width: 100%;
