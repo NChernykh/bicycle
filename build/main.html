@@ -6,7 +6,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Project Name - Велосипеды">
-
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "../../img/mobile.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "../../img/tablet.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1024px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "../../img/desktop.jpg");
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 <link rel="preload" href="fonts/open-sans-regular.woff2" as="font" crossorigin="anonymous">
 <link rel="preload" href="fonts/open-sans-700.woff2" as="font" crossorigin="anonymous">
 
@@ -15,7 +40,7 @@
   <title>ProjectName — Главная</title>
 
 </head>
-<body>
+<body style="opacity: 1">
 
   <div style="display: none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 8 12">
@@ -159,13 +184,13 @@
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
           <div class="video__content">
-            <a class="video__link" href="https://www.youtube.com/">
+            <a href="https://www.youtube.com/">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-mobile@1x.webp 1x, img/content/video-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-tablet@1x.webp 1x, img/content/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/video-desktop@1x.jpg, img/content/video-desktop@2x.jpg 2x">
                 <!--1x: 929px; 2x:1858px-->
-                <img class="video__media" src="img/content/video-desktop@1x.jpg" srcset="img/content/video-desktop@2x.jpg 2x" width="929" height="522" alt="Как выбрать себе велосипед">
+                <img src="img/content/video-desktop@1x.jpg" srcset="img/content/video-desktop@2x.jpg 2x" width="929" height="522" alt="Как выбрать себе велосипед">
               </picture>
             </a>
             <button class="video__btn" type="button" aria-label="Запустить видео">
@@ -198,7 +223,7 @@
         </svg>
         puteshestviemechta@gmail.ru
       </a>
-      <a class="footer__item" href="tel:+749978468446" aria-label="Позонить">
+      <a class="footer__item footer__item--phone" href="tel:+749978468446" aria-label="Позонить">
         <svg class="footer__icon" width="21" height="22">
           <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
         </svg>

@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  max-width: 342px;
   margin-right: 50px;
 
   &:last-child {
@@ -7,10 +8,20 @@
     margin-bottom: 0;
   }
 
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
   @include viewport--md {
+    max-width: 270px;
     margin-bottom: 50px;
 
-    &:nth-child(2n) {
+    &:nth-child(3n) {
+      margin-right: 50px;
+    }
+
+    &:nth-child(even),
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -19,7 +30,9 @@
     margin: 0 auto;
     margin-bottom: 42px;
 
-    &:nth-child(2n) {
+    &:nth-child(3n),
+    &:nth-child(even),
+    &:nth-child(3n-1) {
       margin: 0 auto;
       margin-bottom: 42px;
     }
@@ -72,7 +85,7 @@
   }
 }
 
-.card--position:nth-child(2n) {
+.card--position:nth-child(3n - 1) {
   margin-top: 40px;
 
   @include viewport--md {
@@ -135,8 +148,8 @@
   }
 }
 
-.card--decor:nth-child(2n)::before,
-.card--decor:nth-child(2n)::after {
+.card--decor:nth-child(3n - 1)::before,
+.card--decor:nth-child(3n - 1)::after {
   width: 47px;
   height: 47px;
   left: -20px;
@@ -150,7 +163,7 @@
   }
 }
 
-.card--decor:nth-child(2n)::after {
+.card--decor:nth-child(3n - 1)::after {
   left: 318px;
   top: 541px;
 }
