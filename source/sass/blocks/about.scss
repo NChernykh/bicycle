@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 150px;
+  margin-bottom: 130px;
 
   @include viewport--md {
     margin-bottom: 30px;
@@ -35,7 +35,7 @@
   counter-reset: my-awesome-counter;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,13 @@
 .about__list-item {
   width: 263px;
   margin: 0;
+  margin-right: 38px;
+  margin-bottom: 20px;
   counter-increment: my-awesome-counter;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &::before {
     content: "0" counter(my-awesome-counter);
@@ -61,11 +67,20 @@
   }
 
   @include viewport--md {
+    margin-right: 30px;
     margin-bottom: 40px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   @include viewport--sm {
     margin: 0 auto 40px;
+
+    &:nth-child(even) {
+      margin: 0 auto 40px;
+    }
 
     &:not(:first-child) .about__text {
       padding-top: 10px;

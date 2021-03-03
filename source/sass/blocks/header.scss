@@ -10,6 +10,19 @@
 
   @include viewport--md {
     padding: 0;
+    position: relative;
+    margin-bottom: -63px;
+
+    &--js {
+      position: absolute;
+      top: 0;
+    }
+
+    &--js + main,
+    &--js + footer,
+    &--js .header__logo {
+      display: none;
+    }
   }
 }
 
@@ -22,14 +35,9 @@
   z-index: 5;
 
   @include viewport--md {
+    position: relative;
     flex-direction: column;
     max-width: 100%;
-
-    &--js {
-      z-index: 8;
-      position: absolute;
-      top: 0;
-    }
   }
 }
 

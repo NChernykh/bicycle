@@ -1,16 +1,16 @@
 .catalog {
-  margin-bottom: 150px;
+  padding-bottom: 134px;
   background-color: $color-lightgray;
   padding-top: 150px;
   text-align: center;
 
   @include viewport--md {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     padding-top: 52px;
   }
 
   @include viewport--sm {
-    margin-bottom: 55px;
+    padding-bottom: 55px;
   }
 }
 

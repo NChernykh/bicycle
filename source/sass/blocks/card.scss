@@ -2,6 +2,7 @@
   position: relative;
   max-width: 342px;
   margin-right: 50px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
@@ -12,10 +13,7 @@
     margin-right: 0;
   }
 
-  @include viewport--md {
-    max-width: 270px;
-    margin-bottom: 50px;
-
+  @media (max-width: 1225px) {
     &:nth-child(3n) {
       margin-right: 50px;
     }
@@ -24,6 +22,13 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @include viewport--md {
+    max-width: 270px;
+    margin-bottom: 50px;
+
+
   }
 
   @include viewport--sm {
@@ -80,7 +85,7 @@
   margin-top: 10px;
   z-index: 1;
 
-  @include viewport--md {
+  @media (max-width: 1225px) {
     margin-top: 0;
   }
 }
@@ -88,7 +93,7 @@
 .card--position:nth-child(3n - 1) {
   margin-top: 40px;
 
-  @include viewport--md {
+  @media (max-width: 1225px) {
     margin-top: 0;
   }
 }
@@ -104,7 +109,7 @@
   border: 17px solid $color-robins-egg-blue;
   border-radius: 50%;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1225px) {
     content: none;
   }
 }
@@ -165,5 +170,6 @@
 
 .card--decor:nth-child(3n - 1)::after {
   left: 318px;
-  top: 541px;
+  top: auto;
+  bottom: 30px;
 }

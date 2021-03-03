@@ -20,10 +20,11 @@
   list-style: none;
 
   @include viewport--md {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     flex-direction: column;
     padding-top: 100px;
+    padding-bottom: 30px;
     background-color: $color-default-white;
   }
 }

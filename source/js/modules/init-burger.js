@@ -1,4 +1,4 @@
-const header = document.querySelector('.header__wrapper');
+const header = document.querySelector('.header');
 const navToggle = document.querySelector('.btn-reset');
 const mainNav = document.querySelector('.main-nav');
 
@@ -9,7 +9,7 @@ const initBurger = () => {
 
     navToggle.addEventListener('click', function () {
       mainNav.classList.toggle('main-nav--opened');
-      header.classList.toggle('header__wrapper--js');
+      header.classList.toggle('header--js');
     });
   }
 };

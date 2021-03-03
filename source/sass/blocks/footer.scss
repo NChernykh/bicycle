@@ -4,24 +4,28 @@
 
 .footer__container {
   min-height: 100px;
+  max-width: 957px;
   margin: 0 auto;
-  padding: 38px 30px 80px;
+  padding: 38px 0 80px;
 
   @include viewport--md {
-    padding-top: 18px;
+    margin: 0 35px;
+    padding-top: 20px;
     padding-bottom: 54px;
   }
 
   @include viewport--sm {
+    margin: 0 auto;
     padding: 30px 22px 50px;
   }
 }
 
 .footer__contacts {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   @include viewport--sm {
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
@@ -30,6 +34,7 @@
 .footer__item {
   position: relative;
   margin-right: 86px;
+  margin-bottom: 10px;
   padding-left: 40px;
   font-size: 16px;
   line-height: 22px;
@@ -41,7 +46,7 @@
     padding-left: 46px;
   }
 
-  &--phone {
+  &:last-child {
     margin-right: 15px;
 
     @include viewport--md {
