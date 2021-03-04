@@ -10,43 +10,12 @@
 
   @include retina {
     background-image: url("../img/bg/intro-bg-desktop@2x.jpg");
-    background-size: 2160px auto;
+    background-size: 2880px auto;
   }
 
   @include viewport--md {
-    margin-bottom: 143px;
-    background-image: url("../img/bg/intro-bg-tablet@1x.jpg");
-    background-size: contain;
-    background-position: top;
-
-    @include retina {
-      background-image: url("../img/bg/intro-bg-tablet@2x.jpg");
-      background-size: 1151px auto;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: $color-default-white;
-      height: 44.5%;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  @include viewport--sm {
-    background-size: 100% auto;
-    background-image: url("../img/bg/intro-bg-mobile@1x.jpg");
-
-    @include retina {
-      background-image: url("../img/bg/intro-bg-mobile@2x.jpg");
-      background-size: 479px auto;
-    }
-
-    &::after {
-      height: 42.5%;
-    }
+    margin-bottom: 72px;
+    background: none;
   }
 }
 
@@ -61,15 +30,9 @@
 
   @include viewport--md {
     flex-direction: column;
-    padding-top: 135px;
-    padding-bottom: 80px;
-    max-width: 435px;
+    padding: 0;
+    max-width: 100%;
     text-align: center;
-  }
-
-  @include viewport--sm {
-    padding-top: 120px;
-    padding-bottom: 70px;
   }
 }
 
@@ -88,16 +51,12 @@
 
   @include viewport--md {
     padding-top: 0;
-    z-index: 2;
-    position: relative;
-    top: 150px;
     margin: 0 auto;
     width: 324px;
   }
 
   @include viewport--sm {
     width: 288px;
-    top: 140px;
   }
 }
 
@@ -105,7 +64,32 @@
   width: 45%;
 
   @include viewport--md {
+    margin-bottom: 70px;
+    padding-top: 135px;
+    padding-bottom: 80px;
     width: 100%;
+    text-align: center;
+    background-color: $color-default-black;
+    background-image: url("../img/bg/intro-bg-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @include retina {
+      background-image: url("../img/bg/intro-bg-tablet@2x.jpg");
+      background-size: 1534px auto;
+    }
+  }
+
+  @include viewport--sm {
+    padding-top: 122px;
+    padding-bottom: 70px;
+    background-image: url("../img/bg/intro-bg-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg/intro-bg-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -116,10 +100,16 @@
   line-height: 64px;
 
   @include viewport--md {
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 20px;
+    width: 435px;
     font-size: 30px;
     line-height: 42px;
+  }
+
+  @include viewport--sm {
+    margin: 0 15px 20px;
+    width: auto;
   }
 }
 
@@ -131,7 +121,14 @@
   opacity: 0.8;
 
   @include viewport--md {
+    margin: 0 auto;
+    width: 435px;
     font-size: 18px;
     line-height: 32px;
+  }
+
+  @include viewport--sm {
+    margin: 0 15px;
+    width: auto;
   }
 }

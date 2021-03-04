@@ -6,12 +6,13 @@
   min-height: 100px;
   max-width: 957px;
   margin: 0 auto;
-  padding: 38px 0 80px;
+  padding-top: 38px;
+  padding-bottom: 90px;
 
   @include viewport--md {
     margin: 0 35px;
-    padding-top: 20px;
-    padding-bottom: 54px;
+    padding-top: 22px;
+    padding-bottom: 50px;
   }
 
   @include viewport--sm {
